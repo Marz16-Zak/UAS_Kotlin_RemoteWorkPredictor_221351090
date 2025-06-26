@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvJudulSimulasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simulasi Prediksi Produktivitas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etJamKerja"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Jam Kerja (per hari)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tvJudulSimulasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etKelelahan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Tingkat Kelelahan (1-10)"
+            android:inputType="number"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etJamKerja"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etKonsentrasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Tingkat Konsentrasi (1-10)"
+            android:inputType="number"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etKelelahan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnPrediksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediksi"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/etKonsentrasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hasil akan muncul di sini"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btnPrediksi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

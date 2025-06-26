@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleFitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur Aplikasi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Menggunakan model Machine Learning (TensorFlow Lite).\n\n• Tampilan sederhana dan mudah digunakan.\n\n• Halaman Splash, About, dan navigasi antarlayar.\n\n• Ringan, cepat, dan dapat dijalankan offline."
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/fiturImage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_remote_work"
+            android:contentDescription="Ilustrasi Fitur"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>
